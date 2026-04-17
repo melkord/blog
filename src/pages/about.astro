@@ -1,0 +1,60 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="About" description="About Andrea Terruggia" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<a href="/" class="back-link">&larr; Read the blog</a>
+			<div class="prose">
+				<h1>About</h1>
+				<p>
+					Software engineer, 15+ years of experience. My stack is TypeScript across the board: React, NestJS, Express, PostgreSQL. Over the years I have worked with most of what the web ecosystem has to offer: Vue, Django, Python, PHP, Redis, Docker, Prisma, Jest, Bun, Bitbucket Pipelines, Jenkins, Google Cloud Platform, and probably a few others I'm forgetting.
+				</p>
+				<p>
+					Currently Senior Backend Developer at a vehicle auction startup. Previously spent 6 years at Hootsuite.
+				</p>
+				<p>
+					Based in Italy, fully remote.
+				</p>
+				<p>
+					Outside work: climbing, mountains, and a German Shorthaired Pointer that needs more exercise than me.
+				</p>
+				</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.back-link {
+		display: inline-block;
+		margin-bottom: 2em;
+		color: var(--text-muted);
+		text-decoration: none;
+		font-size: 0.88em;
+	}
+	.back-link:hover {
+		color: var(--text);
+		text-decoration: none;
+	}
+	.prose {
+		width: 680px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+	}
+	.prose h1 {
+		color: var(--text);
+	}
+	.prose p {
+		color: var(--text-secondary);
+		line-height: 1.8;
+	}
+</style>
